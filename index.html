@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Basic Calculator</title>
+</head>
+</html>
+<body>
+    <div class="calc">
+        <input type="number" placeholder="0" id="calc">
+        <button onclick="window.location.reload()" class="clearBTN">Cl</button>
+        <button onclick="Delete()">Del</button>
+        <button onclick="getOperator('%')">%</button>
+        <button onclick="getOperator('/')">/</button>
+
+        <button onclick="getNumbers(7)">7</button>
+        <button onclick="getNumbers(8)">8</button>
+        <button onclick="getNumbers(9)">9</button>
+        <button onclick="getOperator('*')">*</button>
+
+        <button onclick="getNumbers(4)">4</button>
+        <button onclick="getNumbers(5)">5</button>
+        <button onclick="getNumbers(6)">6</button>
+        <button onclick="getOperator('+')">+</button>
+
+        <button onclick="getNumbers(1)">1</button>
+        <button onclick="getNumbers(2)">2</button>
+        <button onclick="getNumbers(3)">3</button>
+        <button onclick="getOperator('-')">-</button>
+       
+        <button onclick="getOperator(0)">0</button>
+        <button onclick="getOperator('.')">.</button>
+        <button onclick="calculate()"  class="equalBTN">=</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
